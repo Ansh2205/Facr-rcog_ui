@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hub</title>
+  <link rel="stylesheet" href="Style/style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+  <header class="text-gray-400 bg-white-900 body-font">
+    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+      <a class="flex title-font font-medium items-center text-black mb-4 md:mb-0">
+        <span class="ml-3 text-xl">Welcome To Smart Home</span>
+      </a>
+      <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+        <a class="mr-5 hover:text-dark-black">
+          <div id="clock">8:10:45</div>
+        </a>
+      </nav>
+    </div>
+  </header>
+  <hr color="black">
+  <section class="text-gray-400 white-900 body-font ">
+    <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
+      <iframe src="http://192.168.29.120:8080/browserfs.html" frameborder="0" ></iframe>
+    </div>
+  </section>
+
+  <!--Form-->
+<br>
+<hr>
+  <div class=" flex flex-col 
+  items-center justify-center">
+    <p class="text-green-700 text-xl mb-3">
+     Please Enter a 4 Digit Pin
+    </p>
+    <form>
+      <input aria-label="Enter your 4 digit pin" type="password" placeholder="* * * * " class="text-sm text-gray-base w-full mr-3 
+            py-5 px-4 h-2 border border-gray-200 
+            rounded mb-2" />
+
+      <button type="submit" class="bg-green-400 w-full mt-4">
+        Submit
+      </button>
+    </form>
+  </div>
+  <br><br><br><br><br>
+</body>
+<script src="/Javascript/clock.js"></script>
+
+</html>
